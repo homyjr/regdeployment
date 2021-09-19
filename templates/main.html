@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <link rel="stylesheet" href="static/css/style.css">
+<title>regression</title>
+
+</head>
+<body>
+
+<form action="/", method = 'POST'>
+   <label for="cars">Choose a model:</label>
+
+    <select name="model" id="cars">
+      <option value="linear">linear</option>
+      <option value="lasso">lasso</option>
+      <option value="ridge">ridge</option>
+      <option value="elasticnet">elasticnet</option>
+    </select>
+    <br><br>
+
+  <label for="Processtemperature">Process temperature:</label>
+  <input type="text" id="Processtemperature" name="Processtemperature"><br><br>
+    <label for="Rotationalspeed">Rotationalspeed:</label>
+  <input type="text" id="Rotationalspeed" name="Rotationalspeed"><br><br>
+  <label for="Torque">Torque:</label>
+  <input type="text" id="Torque" name="Torque"><br><br>
+   <label for="Toolwear">Toolwear:</label>
+  <input type="text" id="Toolwear" name="Toolwear"><br><br>
+  <label for="Machinefailure">Machine failure:</label>
+  <input type="text" id="Machinefailure" name="Machinefailure"><br><br>
+  <label for="TWF">TWF:</label>
+  <input type="text" id="TWF" name="TWF"><br><br>
+  <label for="HDF">HDF:</label>
+  <input type="text" id="HDF" name="HDF"><br><br>
+  <label for="PWF">PWF:</label>
+  <input type="text" id="PWF" name="PWF"><br><br>
+  <label for="OSF">OSF:</label>
+  <input type="text" id="OSF" name="OSF"><br><br>
+  <label for="RNF">RNF:</label>
+  <input type="text" id="RNF" name="RNF"><br><br>
+  <input type="submit" value="Submit">
+
+
+</form>
+<h3>Answer: <span id = "answer">{{data}}<span><h3>
+
+<a href="/profile" class= "button" type="button" id ="profilebtn">profiling</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+</html>
